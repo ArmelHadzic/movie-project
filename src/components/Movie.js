@@ -51,7 +51,7 @@ class Movie extends Component {
         return (
             <div className="movie-details">
                 <div className="movie-trailer">
-                    <ReactPlayer url={this.state.trailer.key ? "https://youtu.be/" + this.state.trailer.key : ''} />
+                    <ReactPlayer url={this.state.trailer ? "https://youtu.be/" + this.state.trailer.key : ''} />
                 </div>
                 <div className="movie-info">
                     <img src={IMAGE_URL + this.state.movie.poster_path} alt="" className="image" />
