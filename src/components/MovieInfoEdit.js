@@ -14,12 +14,8 @@ const MovieInfoEdit = (props) => {
             <input type="text" value={props.movie.vote_average} onChange={(event) => props.editMovie("vote_average", event.target.value)} className="input"/>
 
             <label className="info-title">Director: </label>
-
             <label className="info-title">Producer: </label>
-
-            <label className="info-title">Main cast:
-                            {/* Object keys something */}
-            </label>
+            <label className="info-title">Main cast: </label>
         </div>
     )
 }

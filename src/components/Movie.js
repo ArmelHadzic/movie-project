@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import ReactPlayer from 'react-player';
 import MovieInfo from "./MovieInfo";
+import imagePlaceholder from "../resources/imgPlaceholder.png";
 import { BASE_API_MOVIE_URL, IMAGE_URL,  API_KEY } from '../constants';
 
 class Movie extends Component {
@@ -54,7 +55,7 @@ class Movie extends Component {
                     <ReactPlayer url={this.state.trailer ? "https://youtu.be/" + this.state.trailer.key : ''} />
                 </div>
                 <div className="movie-info">
-                    <img src={IMAGE_URL + this.state.movie.poster_path} alt="" className="image" />
+                    <img src={this.state.movie.poster_path ? IMAGE_URL + this.state.movie.poster_path : imagePlaceholder} alt="" className="image" />
                     <MovieInfo movie={this.state.movie} editMode={this.state.editMode} editMovie={this.editMovieHandler}/>
                 </div>
                 <div>

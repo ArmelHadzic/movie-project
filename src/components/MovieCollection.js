@@ -8,6 +8,7 @@ const MovieCollection = (props) => {
     var genre = location.pathname
     genre = genre.replace('/genres/', '');
     genre = genre.replace('/', '');
+    
     return (
         <div className="movie-section">
             <div className="movie-title">Top Rated {genre} Movies</div>

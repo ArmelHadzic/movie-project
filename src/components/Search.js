@@ -6,7 +6,7 @@ const Search = (props) => {
             <input 
                 type="text" 
                 className="search" 
-                placeholder="Search movie, director, actor..."
+                placeholder="Search movies"
                 value={props.searchValue}
                 onChange={(event) => props.searchValueHandler(event.target.value)}
                 onKeyPress={(event) => (event.charCode === 13) ? props.searchHandler() : null}
