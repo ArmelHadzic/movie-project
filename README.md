@@ -1,15 +1,15 @@
 # movie-project
-Small and simple imdb clone
+Small and simple movie project built in ReactJS v17.0.1
 ## Requirements
 
-Node v12+
+- Node v12+
 
 ## Run 
 
--Pull repo from the github.
+- Pull repo from the github.
 
--Cd into repo folder. 
+- cd into repo folder. 
 
--Install dependencies with "npm install" command
+- Install dependencies with `npm install` command
 
--Build and serve application with "npm start" command
+- Build and serve application with `npm start` command
